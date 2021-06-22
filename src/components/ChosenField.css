@@ -1,0 +1,8 @@
+.chosen-user__description{  
+  display: inline-block;
+}
+
+.chosen-user__description::first-letter {  
+  text-transform: uppercase;
+  font-weight: bolder;
+}

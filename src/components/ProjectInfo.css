@@ -1,0 +1,23 @@
+.project-info {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  display: block;
+  background-color: green;
+  font-size: bold;
+  border: none;
+  z-index: 19;
+}
+
+.project-info:hover {
+  background-color: rgb(2, 112, 2);
+}
+
+@media(max-width: 610px) {
+  .project-info {
+    display: block;
+    position: static;
+    margin-bottom: 25px;
+    margin-left: auto;
+  }
+}

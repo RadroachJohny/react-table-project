@@ -1,0 +1,73 @@
+body {
+  height: 100%;
+  background-color: rgb(213 228 226);
+}
+.App {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.table {
+  display: block;
+  border-collapse: collapse;
+  /* min-width: 70%; */
+  /* width: 100%; */
+  max-height: 500px !important;
+  overflow: auto;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table thead {
+  /* background-color: #a39a9a; */
+  font-weight: bold;;
+}
+
+.table td {
+  position: relative;
+  border: 1px solid #cecece;
+}
+
+.table thead td {
+  padding-right: 2rem;
+}
+
+.table-dark thead td:after {
+  position: absolute;
+  content: "▲";
+  right: 5px;
+}
+
+.table-dark thead td.down:after {
+  position: absolute;
+  content: "▼";
+  right: 5px;
+  margin-left: auto;
+}
+
+.table-dark thead td:after {
+  cursor: pointer;
+}
+
+.table-addUser label {
+  display: block;
+}
+
+form .btn-success:disabled {
+  background-color: #ccc;
+  color: rgb(136, 127, 127);
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media(max-width: 640px) {  
+  .table-container {
+    width: 100%;
+  }
+}
