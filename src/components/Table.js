@@ -83,7 +83,7 @@ const Table = () => {
     setFetching(true);
     try {
       const getData = async () => {
-        const urls = ["https://www.filltext.com/?rows=1000&id={number|1000}&firstName={firstName}&delay=3&lastName={lastName}&email={email}&phone={phone|(xxx)xxx-xx-xx}&address={addressObject}&description={lorem|32}", "https://react-post-request-ad5a1-default-rtdb.firebaseio.com/users.json"];
+        const urls = ["http://www.filltext.com/?rows=1000&id={number|1000}&firstName={firstName}&delay=3&lastName={lastName}&email={email}&phone={phone|(xxx)xxx-xx-xx}&address={addressObject}&description={lorem|32}", "https://react-post-request-ad5a1-default-rtdb.firebaseio.com/users.json"];
 
         const promises = urls.map((url) => fetch(url).then((resp) => resp.json()));
 
